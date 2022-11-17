@@ -1,0 +1,29 @@
+.hero {
+  background-color: $grayBg;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 154px;
+    padding-right: 126px;
+    padding-left: 162px;
+  }
+
+  &__title {
+    @include texts(56px, 1.23);
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    @include texts(20px, 1.4);
+    margin-bottom: 52px;
+  }
+
+  &__button {
+    @include buttons(22px 24px 16px, $mainBg, $accentColor, transparent);
+    @include texts(18px, 1.22);
+  }
+}

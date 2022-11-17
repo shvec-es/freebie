@@ -1,2 +1,13 @@
+@import './variables';
+@import './mixins';
 @import './common';
-@import './example';
+@import './reset';
+
+// sections-styles
+@import './header';
+@import './hero';
+@import './about';
+@import './services';
+@import './ready';
+@import './blog';
+@import './footer';

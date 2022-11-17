@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 106px;
+  padding-bottom: 36px;
+  background-color: $headerFooterBg;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    margin-bottom: 44px;
+  }
+
+  &__logo {
+    color: $accentColor;
+  }
+
+  &__list {
+    @include texts(14px, 1.4);
+    display: flex;
+    font-weight: 700;
+
+    &--first {
+      gap: 80px;
+    }
+
+    &--second {
+      gap: 54px;
+    }
+  }
+}
+
+.liner {
+  margin: 0 auto 56px;
+  width: 1000px;
+  height: 1px;
+  text-align: center;
+  background-color: $mainColor;
+}
+
+.soclist {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-bottom: 72px;
+}
+
+.policy {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  @include texts(14px, 1.4);
+}
