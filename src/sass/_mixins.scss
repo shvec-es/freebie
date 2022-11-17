@@ -1,0 +1,11 @@
+@mixin texts($size, $lh) {
+  font-size: $size;
+  line-height: $lh;
+}
+
+@mixin buttons($pad, $col, $bg, $bc) {
+  padding: $pad;
+  color: $col;
+  background-color: $bg;
+  border-color: $bc;
+}

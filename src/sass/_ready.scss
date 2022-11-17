@@ -1,0 +1,40 @@
+%btn {
+  @include texts(18px, 1.35);
+}
+
+.ready {
+  padding: 80px 0;
+  background-color: $accentColor;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__text {
+    @include texts(32px, 1.4);
+    font-weight: 700;
+  }
+
+  &__title {
+    @include texts(32px, 1.4);
+    font-weight: 400;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button--first {
+    @extend %btn;
+    @include buttons(18px 24px 12px, $mainBg, $logoColor, transparent);
+  }
+
+  &__button--second {
+    @extend %btn;
+    @include buttons(18px 24px 12px, $logoColor, transparent, $logoColor);
+    border: 1px solid;
+  }
+}

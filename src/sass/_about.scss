@@ -1,0 +1,28 @@
+.about {
+  background-color: $grayBg;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding: 164px 104px 104px;
+  }
+
+  &__title {
+    @include texts(32px, 1.4);
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+
+  &__text {
+    @include texts(20px, 1.4);
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    @include buttons(22px 46px 16px, $accentColor, transparent, $accentColor);
+    border: 1px solid;
+  }
+}

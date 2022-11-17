@@ -1,0 +1,77 @@
+.blog {
+  padding-top: 88px;
+  padding-bottom: 80px;
+  background-color: $mainBg;
+  text-align: center;
+
+  &__title {
+    @include texts(32px, 1.19);
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+
+  &__text {
+    @include texts(18px, 1.36);
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 570px;
+    padding: 48px;
+    text-align: left;
+    line-height: 1.4;
+    box-shadow: $shadow;
+  }
+
+  &__name {
+    width: 454px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  &__descr {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  &__link {
+    font-size: 14px;
+  }
+}
+
+.single-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &__content {
+    width: 770px;
+    padding-top: 64px;
+    padding-right: 200px;
+    padding-left: 78px;
+    background-color: $logoColor;
+    color: $mainBg;
+    text-align: left;
+  }
+
+  &__name {
+    @include texts(14px, 1.4);
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    @include texts(48px, 1.21);
+    margin-bottom: 60px;
+    font-weight: 300;
+  }
+
+  &__link {
+    @include texts(18px, 1.4);
+  }
+}

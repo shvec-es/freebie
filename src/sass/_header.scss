@@ -1,0 +1,38 @@
+.header {
+  background-color: $headerFooterBg;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 34px;
+  }
+
+  &__logo {
+    padding: 38px 0;
+  }
+
+  &__button {
+    @include buttons(
+      14px 24px 8px 24px,
+      $accentColor,
+      transparent,
+      $accentColor
+    );
+    border: 1px solid;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    @include texts(18px, 1.22);
+    display: block;
+    padding: 48px 0;
+  }
+}
